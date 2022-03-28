@@ -1,0 +1,44 @@
+server:
+  port: 80
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/webtags?useSSL=false&characterEncoding=utf8&serverTimezone=GMT%2B8
+    username:
+    password:
+
+  jpa:
+    database: mysql
+    show-sql: true #输入sql语句
+    hibernate:
+      ddl-auto: update #自动生成表
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect #设置方言
+
+  freemarker:
+    suffix: .ftl #个人习惯，指定旧版本的后缀
+    settings:
+      classic_compatible: true #为了解决页面出现空值时候会报错，所以需要设置classic_compatible信息
+
+  redis:
+    database: 3  # redis数据库索引（默认为0），使用索引为3的数据库，避免和其他数据库冲突
+    host: localhost
+    port: 6379
+    password:
+
+  elasticsearch:
+    uris: 127.0.0.1:9200
+    username:
+    password:
+
+wechat:
+  mpAppId:  #开发者ID
+  mpAppSecret:  #开发者密码
+  token:  #token
+
+logging:
+  file:
+    name: server.log
+
+yh:
+  domain:  #域名
