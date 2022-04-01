@@ -67,3 +67,9 @@
 ✅公众号扫码登录注册
 
 - ![微信公众号登录验证](README.assets/微信公众号登录验证.jpg)
+
+
+
+#### 开发笔记
+
+- [网页收藏工具开发笔记](https://gitee.com/ethan1996/webtags/blob/master/%E7%BD%91%E9%A1%B5%E6%94%B6%E8%97%8F%E5%B7%A5%E5%85%B7%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0.md)
